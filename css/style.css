@@ -140,13 +140,15 @@ body {
 }
 
 .imgAbout {
-  width: 100%;
+  width: 70%;
   border-radius: 5px;
 }
 
 .imgBoxAbout {
   display: flex;
   width: 100%;
+  justify-content: center;
+  align-items: center;
   padding-left: 1rem;
 }
 
