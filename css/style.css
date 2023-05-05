@@ -17,6 +17,11 @@ body {
   width: 100%;
 }
 
+.menu-itens {
+  display: flex;
+  flex-wrap: nowrap
+}
+
 .menu {
   background-color: #ebdfff;
   color: black;
@@ -26,6 +31,7 @@ body {
   align-items: center;
   align-content: center;
   display: flex;
+  flex-wrap: nowrap;
 
   z-index: 9999;
   width: 100%;
@@ -35,7 +41,7 @@ body {
 }
 
 .menu a {
-  margin: 0 1rem 0 1rem;
+  margin: 0 0.5rem 0 0.5rem;
 }
 
 .menu-link {
@@ -44,6 +50,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   position: relative;
+  white-space: nowrap;
   transition: all 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
@@ -53,8 +60,10 @@ body {
 
 .logo {
   font-size: 35px;
+  white-space: nowrap;
   color: black;
   text-decoration: none;
+  font-family: Quattrocento Sans;
 }
 
 #active::after {
@@ -167,6 +176,8 @@ body {
   flex-direction: column;
   text-align: justify;
   align-items: center;
+  justify-content: center;
+  align-content: center;
   line-height: 1.7rem;
   font-size: 16px;
 }
@@ -188,6 +199,7 @@ body {
   width: 30%;
   padding: 5px;
   align-self: flex-end;
+  text-decoration: none;
   
   margin-top: 10%;
   
@@ -245,7 +257,7 @@ body {
   min-width: 100px;
   min-height: 100px;
 
-  max-height: 60%;
+  max-height: 10%;
   width: 33%;
   height: 33%;
   border-radius: 10px;
